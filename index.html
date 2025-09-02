@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JackBlack</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 text-primary">Juego de JackBlack</h1>
+        </header>
+        <div class="row">
+            <!-- Panel del jugador -->
+             <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="card-title">Jugador</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <h4>Puntuación:<span class="badge bg-success" id="player-score">0</span></h4>
+                        </div>
+                        <div class="dice-container mb-3" id="player-dice">
+                            <!-- Se intrustaran los dados o piezas que salgan-->
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <!-- Panel del contricante-->
+             <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="card-title">Contricante</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="text-center mg-3">
+                            <h4>Puntuación: <span class="badge bg-danger">0</span></h4>
+                        </div>
+                        <div class="dice-container mb-3" id="rival-dice">
+                            <!-- Aqui se muestran los dados del contricante -->
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="row mt-4">
+                <!-- Aqui panel de control -->
+                <div class="col-12 text-center">
+                    <div id="game-controls" class="d-flex justify-content-center gap-3 flex-wrap">
+                        <button id="btnTirarDado" class="btn btn-primary btn-lg">Tirar Dado</button>
+                        <button id="btnDetenerse" class="btn btn-warning btn-lg">Detenerse</button>
+                        <button id="btnReiniciar" class="btn btn-secondary btn-lg">Reiniciar</button>
+                    </div>
+                    <div id="mensaje" class="alert alert-info mt-3 d-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
