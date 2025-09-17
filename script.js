@@ -113,7 +113,6 @@ function turnoRival() {
             if (rivalscore > 7.5) {
                 clearInterval(interval);
                 endGame("El rival se pasó del límite, ¡tú ganaste!");
-                return;
             }
         } else {
             clearInterval(interval);
